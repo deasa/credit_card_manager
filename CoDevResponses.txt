@@ -95,3 +95,139 @@ models - Folder containing data models for CreditCard and CardBenefit.
 screens - Folder containing the app screens: HomeScreen, AddCardScreen, CardBenefitsScreen, and RecommendedCardsScreen.
 services - Folder containing the services for managing cards and their benefits: CardService.
 Tests are organized in a similar manner under the test folder.
+
+
+Brendan Ashton
+--------------
+/code "main.dart"
+
+ChatGPT-4
+--------------
+Here is the code for main.dart:
+
+dart
+Copy code
+// CoDev - A GPT 4.0 Virtual Developer, by twitter.com/@etherlegend
+
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+
+void main() {
+  runApp(CreditCardManagementApp());
+}
+
+class CreditCardManagementApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Credit Card Management App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: HomeScreen(),
+    );
+  }
+}
+This is the entry point of the Credit Card Management App. It initializes the app and sets the HomeScreen as the home page. The MaterialApp widget is used to define the theme for the app.
+
+
+Brendan Ashton
+--------------
+/code "main.dart"
+
+ChatGPT-4
+--------------
+Here is the code for main.dart:
+
+dart
+Copy code
+// CoDev - A GPT 4.0 Virtual Developer, by twitter.com/@etherlegend
+
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+
+void main() {
+  runApp(CreditCardManagementApp());
+}
+
+class CreditCardManagementApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Credit Card Management App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: HomeScreen(),
+    );
+  }
+}
+This is the entry point of the Credit Card Management App. It initializes the app and sets the HomeScreen as the home page. The MaterialApp widget is used to define the theme for the app.
+
+
+
+
+Brendan Ashton
+--------------
+/code "home_screen.dart"
+
+ChatGPT-4
+--------------
+Here is the code for home_screen.dart:
+
+dart
+Copy code
+// CoDev - A GPT 4.0 Virtual Developer, by twitter.com/@etherlegend
+
+import 'package:flutter/material.dart';
+import 'add_card_screen.dart';
+import 'card_benefits_screen.dart';
+import 'recommended_cards_screen.dart';
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Credit Card Management'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AddCardScreen()),
+                );
+              },
+              child: Text('Add Credit Card'),
+            ),
+            SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CardBenefitsScreen()),
+                );
+              },
+              child: Text('View Card Benefits'),
+            ),
+            SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RecommendedCardsScreen()),
+                );
+              },
+              child: Text('View Recommended Cards'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+In the HomeScreen, we have three buttons that navigate to different screens: AddCardScreen, CardBenefitsScreen, and RecommendedCardsScreen. The buttons are displayed as a centered column with some spacing between them.
