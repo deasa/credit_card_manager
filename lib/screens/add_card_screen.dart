@@ -1,5 +1,3 @@
-// CoDev - A GPT 4.0 Virtual Developer, by twitter.com/@etherlegend
-
 import 'package:flutter/material.dart';
 import '../models/credit_card.dart';
 import '../services/card_service.dart';
