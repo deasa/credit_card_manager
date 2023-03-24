@@ -9,7 +9,7 @@ class RecommendedCardsScreen extends StatefulWidget {
 
 class _RecommendedCardsScreenState extends State<RecommendedCardsScreen> {
   CardService _cardService = CardService();
-  List<CreditCard> _recommendedCards;
+  late List<CreditCard> _recommendedCards;
 
   @override
   void initState() {

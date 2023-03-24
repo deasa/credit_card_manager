@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import '../lib/models/card_benefit.dart';
+import 'package:credit_card_manager/models/card_benefit.dart';
 
 void main() {
   group('CardBenefit', () {

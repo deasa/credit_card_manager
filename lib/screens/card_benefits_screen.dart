@@ -9,7 +9,7 @@ class CardBenefitsScreen extends StatefulWidget {
 
 class _CardBenefitsScreenState extends State<CardBenefitsScreen> {
   CardService _cardService = CardService();
-  List<CreditCard> _cards;
+  late List<CreditCard> _cards;
 
   @override
   void initState() {

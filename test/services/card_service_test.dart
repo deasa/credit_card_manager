@@ -1,10 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
-import '../lib/models/credit_card.dart';
-import '../lib/services/card_service.dart';
+import 'package:credit_card_manager/models/credit_card.dart';
+import 'package:credit_card_manager/services/card_service.dart';
 
 void main() {
   group('CardService', () {
-    CardService cardService;
+    late CardService cardService;
 
     setUp(() {
       cardService = CardService();
